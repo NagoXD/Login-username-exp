@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+    <main>
+        <form class="form contact-form">
+          <h5>Login/Register</h5>
+          <div class="form-row">
+            <label for="username" class="form-label"></label>
+            <input type="text" class="form-input username-input" placeholder="Username" required />
+          </div>
+          <div class="form-row">
+            <label for="password" class="form-label"></label>
+            <input type="password" class="form-input password-input" placeholder="Password" required/>
+          </div>
+          <div class="text-small form-alert">there was an error</div>
+          <div class="btn-center">
+          <button type="submit" class="btn btn-block">Submit</button>
+          </div>
+        </form>
+        <div class="container">
+          <h4>Board </h4>
+          <p class="token">no token present</p>
+          <div class="result"></div>
+          <div class="btn-center">
+          <button class="btn btn-block" id="data">Get data</button>
+        </div>
+    </div>
+      </main>
+      <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+        integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+      ></script>
+      <script src="./browser-app.js"></script>
+</body>
+</html>
